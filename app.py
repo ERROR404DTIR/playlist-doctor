@@ -36,7 +36,7 @@ def main():
         else: seen[key]=e["line"]
         if e["kind"]=="local" and not e["exists"]: missing.append(e)
     if a.cmd=="audit":
-        print(f"Playlist: {src}\\nEntries: {len(entries)} | Missing: {len(missing)} | Duplicates: {len(duplicates)}")
+        print(f"Playlist: {src}\nEntries: {len(entries)} | Missing: {len(missing)} | Duplicates: {len(duplicates)}")
         for e in missing: print(f"[MISSING] line {e['line']}: {e['path']}")
         for line,first in duplicates: print(f"[DUPLICATE] line {line} repeats line {first}")
         if a.json: Path(a.json).write_text(json.dumps(entries,indent=2,ensure_ascii=False),encoding="utf-8")
@@ -52,7 +52,7 @@ def main():
             except ValueError: line=e["resolved"]
         else: line=e["path"]
         out.append(line)
-    Path(a.output).write_text("#EXTM3U\\n"+"\\n".join(out)+"\\n",encoding="utf-8")
+    Path(a.output).write_text("#EXTM3U\n"+"\n".join(out)+"\n",encoding="utf-8")
     print(f"Wrote {a.output}: {len(entries)} input entries, {len(used)} retained, {len(missing)} missing paths left unchanged.")
     return 0
 if __name__=="__main__": sys.exit(main())
