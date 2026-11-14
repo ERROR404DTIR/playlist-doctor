@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-label="Playlist Doctor — M3U repair • Media paths">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#1e293b"/></linearGradient><linearGradient id="glow"><stop stop-color="#34d399"/><stop offset="1" stop-color="#c4b5fd"/></linearGradient></defs>
+<rect width="1200" height="260" rx="26" fill="url(#bg)"/>
+<circle cx="1010" cy="125" r="112" fill="#34d399" opacity=".08"/>
+<circle cx="1010" cy="125" r="76" fill="none" stroke="#34d399" stroke-width="2" opacity=".65"><animate attributeName="r" values="62;96;62" dur="5s" repeatCount="indefinite"/></circle>
+<path d="M820 170 Q900 70 980 140 T1160 90" fill="none" stroke="url(#glow)" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 12"><animate attributeName="stroke-dashoffset" values="0;-88" dur="5s" repeatCount="indefinite"/></path>
+<text x="72" y="112" fill="#f8fafc" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="750">Playlist Doctor</text>
+<text x="76" y="158" fill="#cbd5e1" font-family="Inter,Arial,sans-serif" font-size="23">M3U repair • Media paths</text>
+<rect x="76" y="190" width="168" height="5" rx="3" fill="#34d399"><animate attributeName="width" values="64;168;64" dur="4s" repeatCount="indefinite"/></rect>
+</svg>
